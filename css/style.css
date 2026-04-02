@@ -309,6 +309,52 @@ strong {
 }
 
 /* --- Problems --- */
+/* --- Why YouTube Now --- */
+.why-yt__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .why-yt__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.why-yt__card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 32px 24px;
+  text-align: center;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.why-yt__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(20, 184, 166, 0.1);
+}
+
+.why-yt__icon {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+}
+
+.why-yt__card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.why-yt__card-text {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+}
+
+/* --- Problems --- */
 .problems__list {
   list-style: none;
   display: flex;
@@ -515,6 +561,34 @@ strong {
   padding: 0 20px 24px;
   line-height: 1.8;
   text-align: left;
+}
+
+.team-card__channels-label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  padding: 0 20px 12px;
+  text-align: left;
+  letter-spacing: 0.04em;
+}
+
+.team-card__channels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0 20px 24px;
+}
+
+.channel-tag {
+  display: inline-block;
+  padding: 8px 18px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text);
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 100px;
+  white-space: nowrap;
 }
 
 /* --- Works --- */
